@@ -14,23 +14,78 @@ class ReactEditor extends Component {
           time: 1556098174501,
           blocks: [
             {
+              type: "paragraph",
+              data: {
+                text: "<p style='font-size: 18px;'>Info Bulletin 1</p>"
+              }
+            },
+            {
               type: "header",
               data: {
-                text: "Editor.js",
+                text:
+                  "<h1 style='font-size: 26px; text-align: center; font-weight: 500; padding: 0; margin: 0;'>Vaccination and Travelmedicin</h1>",
+                level: 1
+              }
+            },
+            {
+              type: "header",
+              data: {
+                text:
+                  "<h2 style='text-align: center; font-size: 14px; font-weight: 500; padding: 0; margin: 0;'>Product sheet health examination</h2>",
                 level: 2
+              }
+            },
+            {
+              type: "image",
+              data: {
+                file: {
+                  url: "https://i.ibb.co/Y2JcNSD/image-2020-07-16-14-47-44.png"
+                },
+                caption: false,
+                withBorder: true,
+                stretched: false,
+                withBackground: false
               }
             },
             {
               type: "paragraph",
               data: {
                 text:
-                  "Hey. Meet the new Editor. On this page you can see it in action — try to edit this text."
+                  "At Aleris Vaccination and Travelmedicin, we care about your health - and want you to be too. Therefore, we see a health survey as a good investment not only for the moment, but also for the future. Together we can capture risk factors and prevent any illness in time. So that you can stay as healthy as possible, both today and tomorrow.<br />We accept both private individuals and companies.<br><strong>Our health survey includes two visits.</strong><br>No additional test will be added and no prescription is included."
               }
             },
             {
               type: "header",
               data: {
-                text: "Key features",
+                text: "Nurse visit",
+                level: 3
+              }
+            },
+            {
+              type: "paragraph",
+              data: {
+                text:
+                  "A health declaration is filled, and it is the basis for a lifestyle interview with the nurse. During the visit, samples, ECG, lung function test (spirometry), blood pressure, vision and hearing tests, height and weight, waist measurements and BMI are taken. You should be <span><strong> about 6 hours prior to sampling.</strong></span> You get more information when you make an appointment. <br/>The visit takes about 45 minutes."
+              }
+            },
+            {
+              type: "header",
+              data: {
+                text: "Doctor visit",
+                level: 3
+              }
+            },
+            {
+              type: "paragraph",
+              data: {
+                text:
+                  "Follow-up visits to specialist physicians for physical examination and review of sampling results. <span><strong>The visit takes about 30 minutes.</strong></span>"
+              }
+            },
+            {
+              type: "header",
+              data: {
+                text: "Content",
                 level: 3
               }
             },
@@ -39,83 +94,18 @@ class ReactEditor extends Component {
               data: {
                 style: "unordered",
                 items: [
-                  "It is a block-styled editor",
-                  "It returns clean data output in JSON",
-                  "Designed to be extendable and pluggable with a simple API"
+                  "Health declaration - lifestyle conversations",
+                  "Heart / lungs auscultation",
+                  "Blood Pressure Measurement",
+                  "ECG",
+                  "Lung function test (spirometry)",
+                  "Length and weight control, calculation of BMI, waist measurements",
+                  "Vision and hearing test",
+                  "Blood tests: blood status, lowering (SR), salts, calcium, egg white, kidney function, liver function, blood sugar, blood fats and iron value",
+                  "Stool sample: faeces Hb&gt 50 years",
+                  "Prostate blood test (PSA) for men&gt 50 years",
+                  "Thyroid test (TSH, T4) for women&gt 18 years"
                 ]
-              }
-            },
-            {
-              type: "header",
-              data: {
-                text: "What does it mean «block-styled editor»",
-                level: 3
-              }
-            },
-            {
-              type: "paragraph",
-              data: {
-                text:
-                  'Workspace in classic editors is made of a single contenteditable element, used to create different HTML markups. Editor.js <mark class="cdx-marker">workspace consists of separate Blocks: paragraphs, headings, images, lists, quotes, etc</mark>. Each of them is an independent contenteditable element (or more complex structure) provided by Plugin and united by Editor\'s Core.'
-              }
-            },
-            {
-              type: "paragraph",
-              data: {
-                text:
-                  'There are dozens of <a href="https://github.com/editor-js">ready-to-use Blocks</a> and the <a href="https://editorjs.io/creating-a-block-tool">simple API</a> for creation any Block you need. For example, you can implement Blocks for Tweets, Instagram posts, surveys and polls, CTA-buttons and even games.'
-              }
-            },
-            {
-              type: "header",
-              data: {
-                text: "What does it mean clean data output",
-                level: 3
-              }
-            },
-            {
-              type: "paragraph",
-              data: {
-                text:
-                  "Classic WYSIWYG-editors produce raw HTML-markup with both content data and content appearance. On the contrary, Editor.js outputs JSON object with data of each Block. You can see an example below"
-              }
-            },
-            {
-              type: "paragraph",
-              data: {
-                text:
-                  'Given data can be used as you want: render with HTML for <code class="inline-code">Web clients</code>, render natively for <code class="inline-code">mobile apps</code>, create markup for <code class="inline-code">Facebook Instant Articles</code> or <code class="inline-code">Google AMP</code>, generate an <code class="inline-code">audio version</code> and so on.'
-              }
-            },
-            {
-              type: "paragraph",
-              data: {
-                text:
-                  "Clean data is useful to sanitize, validate and process on the backend."
-              }
-            },
-            {
-              type: "delimiter",
-              data: {}
-            },
-            {
-              type: "paragraph",
-              data: {
-                text:
-                  "We have been working on this project more than three years. Several large media projects help us to test and debug the Editor, to make it's core more stable. At the same time we significantly improved the API. Now, it can be used to create any plugin for any task. Hope you enjoy. 😏"
-              }
-            },
-            {
-              type: "image",
-              data: {
-                file: {
-                  url:
-                    "https://codex.so/upload/redactor_images/o_e48549d1855c7fc1807308dd14990126.jpg"
-                },
-                caption: "",
-                withBorder: true,
-                stretched: false,
-                withBackground: false
               }
             }
           ],
